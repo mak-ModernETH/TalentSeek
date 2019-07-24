@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import Signin from './components/Signin/Signin';
-// import Logo from './components/Logo/Logo';
+import Logo from './components/Logo/Logo';
+import Landing from './components/Landing/Landing';
 
 class App extends Component {
     constructor() {
@@ -16,6 +17,8 @@ class App extends Component {
         return(
             <div className="App">
                 <Navigation />
+                <Logo />
+                {/* <Landing /> */}
                 <Signin />
                 
             </div>
