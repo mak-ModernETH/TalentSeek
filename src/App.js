@@ -2,16 +2,25 @@ import React, {Component} from 'react';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import Signin from './components/Signin/Signin';
-<<<<<<< HEAD
 import Particles from 'react-particles-js';
 import Home from './components/Home/Home'
-// import Logo from './components/Logo/Logo';
-=======
-import Logo from './components/Logo/Logo';
-import Landing from './components/Landing/Landing';
->>>>>>> c61d1c186da2f02d5e436eed75e31a83239c1b1f
+ import Logo from './components/Logo/Logo';
 
+const particleOptions ={
+                    particles: {
+                     number:{
+
+                        value:80,
+                        density:{
+                            enable:true,
+                            value_area:800
+                        }
+                     }
+                    }
+                }
 class App extends Component {
+
+
     constructor() {
         super()
         this.state = {
@@ -22,14 +31,14 @@ class App extends Component {
     render() {
         return(
             <div className="App">
+
+            <Particles className="particles" 
+              params={particleOptions}
+             
+            />
                 <Navigation />
-<<<<<<< HEAD
-                <Home />
-=======
                 <Logo />
-                {/* <Landing /> */}
                 <Signin />
->>>>>>> c61d1c186da2f02d5e436eed75e31a83239c1b1f
                 
             </div>
         )
