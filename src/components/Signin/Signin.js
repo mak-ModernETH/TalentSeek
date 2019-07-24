@@ -16,7 +16,7 @@ const Signin = ({onRouteChange}) => {
                             <label className="db fw6 lh-copy f6" for="password">Password</label>
                             <input className="b pa2 input-reset ba bg-transparent hover-bg-dark-gray hover-white w-100" type="password" name="password" id="password" />
                         </div>
-                        {/* <label className="pa0 ma0 lh-copy f6 pointer"><input type="checkbox" /> Remember me</label> */}
+                        <label className="pa0 ma0 lh-copy f6 pointer"><input type="checkbox" /> Remember me</label>
                     </fieldset>
                     <div className="">
                         <input
@@ -25,8 +25,8 @@ const Signin = ({onRouteChange}) => {
                         type="submit" value="Sign in" />
                     </div>
                     <div className="lh-copy mt3">
-                        <p onClick={() => onRouteChange('register')} className="f6 link dim black db pointer">Register</p>
-                        {/* <a href="#0" className="f6 link dim black db">Forgot your password?</a> */}
+                        {/* <p onClick={() => onRouteChange('register')} className="f6 link dim black db pointer">Register</p> */}
+                        <a href="#0" className="f6 link dim black db">Forgot your password?</a>
                     </div>
                 </form>
             </main>
