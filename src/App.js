@@ -4,7 +4,7 @@ import Navigation from './components/Navigation/Navigation';
 import Signin from './components/Signin/Signin';
 import Register from './components/Register/Register';
 import Particles from 'react-particles-js';
-import Home from './components/Home/Home'
+import Home from './components/Home/Home';   
 import Logo from './components/Logo/Logo';
 
 const particleOptions = {
@@ -37,9 +37,10 @@ class App extends Component {
                     params={particleOptions}
                 />
                 <Navigation onRouteChange={this.onRouteChange}/>
-                <Logo />
+                
                 {this.state.route === 'home'
                     ? <div>
+                        <Logo />
                         <Register />
                     </div> 
                 :  (
