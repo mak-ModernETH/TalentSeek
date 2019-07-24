@@ -37,11 +37,10 @@ class App extends Component {
                     params={particleOptions}
                 />
                 <Navigation onRouteChange={this.onRouteChange}/>
-                
                 {this.state.route === 'home'
                     ? <div>
                         <Logo />
-                        <Register />
+                        <h1>Home page</h1>
                     </div> 
                 :  (
                     this.state.route === 'signin'
