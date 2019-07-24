@@ -3,6 +3,7 @@ import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import Signin from './components/Signin/Signin';
 import Particles from 'react-particles-js';
+import Home from './components/Home/Home'
 // import Logo from './components/Logo/Logo';
 
 const particleOptions ={
@@ -36,7 +37,7 @@ class App extends Component {
              
             />
                 <Navigation />
-                <Signin />
+                <Home />
                 
             </div>
         )

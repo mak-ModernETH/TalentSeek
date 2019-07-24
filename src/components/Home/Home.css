@@ -1,14 +1,4 @@
-
-
-.particles{
-
-	position:fixed;
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-	z-index:-1;
-}@font-face {
+@font-face {
 font-family: 'SEGA LOGO FONT';
 font-style: normal;
 font-weight: normal;
@@ -18,5 +8,5 @@ h1{
 	font-family: "SEGA LOGO FONT";
 	color: #0cc4c8;
 	font-weight: 200;
-	font-size: 500px;
+	font-size: 300px;
 }
