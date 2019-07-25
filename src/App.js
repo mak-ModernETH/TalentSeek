@@ -5,11 +5,12 @@ import Signin from './components/Signin/Signin';
 import Register from './components/Register/Register';
 import Particles from 'react-particles-js';
 import Logo from './components/Logo/Logo';
+import Profile from './components/Profile/Profile';
 
 const particleOptions = {
     particles: {
         number: {
-            value: 80,
+            value: 90,
             density: {
                 enable: true,
                 value_area: 800
@@ -64,7 +65,7 @@ class App extends Component {
                 {this.state.route === 'home'
                     ? <div>
                         <Logo />
-                        <h1>Home page</h1>
+                        <Profile />
                     </div> 
                 :  (
                     this.state.route === 'signin'

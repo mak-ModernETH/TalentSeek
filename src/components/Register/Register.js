@@ -43,7 +43,7 @@ class Register extends React.Component {
                 <main className="pa4 black-80">
                     <div className="measure tc">
                         <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-                            <legend className="f1 fw6 ph0 mh0">Sign In</legend>
+                            <legend className="f1 fw6 ph0 mh0">Register</legend>
                             <div className="mt3">
                                 <label className="db fw6 lh-copy f6" htmlFor="email-address">Full Name</label>
                                 <input className="pa2 input-reset ba bg-transparent hover-bg-white hover-black w-100"
@@ -71,7 +71,7 @@ class Register extends React.Component {
                                     onChange={this.onPasswordChange}
                                 />
                             </div>
-                            <label className="pa0 ma0 lh-copy f6 pointer"><input type="checkbox" /> Remember me</label>
+                            {/* <label className="pa0 ma0 lh-copy f6 pointer"><input type="checkbox" /> Remember me</label> */}
                         </fieldset>
                         <div className="">
                             <input

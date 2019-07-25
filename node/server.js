@@ -62,7 +62,6 @@ app.post('/register', (req, res) => {
        id: '125',
        name: name,
        email: email,
-       password: password,
        joined: new Date()
    })
    res.json(database.users[database.users.length-1]);
