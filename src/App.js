@@ -4,7 +4,6 @@ import Navigation from './components/Navigation/Navigation';
 import Signin from './components/Signin/Signin';
 import Register from './components/Register/Register';
 import Particles from 'react-particles-js';
-import Home from './components/Home/Home';   
 import Logo from './components/Logo/Logo';
 
 const particleOptions = {
@@ -24,9 +23,28 @@ class App extends Component {
         this.state = {
             input: '',
             route: 'signin',
-            isSignedIn: false
+            isSignedIn: false,
+            user: {
+                id: '',
+                name: '',
+                email: '',
+                joined: ''
+            }
         }
     }
+    loadUser = (data) => {
+        this.setState({user: {
+            id: data.id,
+            name: data.name,
+            email: data.email,
+            joined: data.joined
+        }})
+    }
+    // componentDidMount() {
+    //     fetch('http://localhost:3001/')
+    //     .then(response => response.json())
+    //     .then(console.log)
+    // }
     onRouteChange = (route) =>{
         if(route === 'signout'){
             this.setState({isSignedIn: false})
@@ -51,7 +69,7 @@ class App extends Component {
                 :  (
                     this.state.route === 'signin'
                         ? <Signin onRouteChange={this.onRouteChange} />
-                        : <Register onRouteChange={this.onRouteChange} />
+                        : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
                     )
                     
                 }
