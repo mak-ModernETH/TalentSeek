@@ -1,5 +1,10 @@
+body {
+  margin-bottom: 100px !important;
+}
 
-
+img {
+  width: 100%;
+}
 .particles{
 
 	position:fixed;
@@ -8,15 +13,47 @@
 	top:0;
 	bottom:0;
 	z-index:-1;
-}@font-face {
-font-family: 'SEGA LOGO FONT';
-font-style: normal;
-font-weight: normal;
-src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
 }
-h1{
-	font-family: "SEGA LOGO FONT";
-	color: #0cc4c8;
-	font-weight: 200;
-	font-size: 500px;
+.landing {
+  position: relative;
+  background: url("./img/talent3.jpg") no-repeat;
+  background-size: cover;
+  background-position: stretch;
+  height: 100vh;
+  margin-top: -24px;
+  margin-bottom: -50px;
+}
+
+
+.landing-inner {
+  padding-top: 80px;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-form {
+  opacity: 0.9;
+}
+
+.latest-profiles-img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-control::placeholder {
+  color: #bbb !important;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
