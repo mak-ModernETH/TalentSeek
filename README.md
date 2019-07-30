@@ -1,2 +1,1 @@
-# TalentSeek
-team project at ModernETH
+# talentseekserv
